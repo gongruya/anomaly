@@ -1,0 +1,1 @@
+The C plus plus variation of **_The Realtime Abnormal Event Detection Project_**
