@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3A6ACF20-6786-46B9-A402-14F6B69C239F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>anomaly</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>70CF09A7CD3CA3A51B1FCFF3E7292F2DBFBBBBDF</key>
+		<string>github.com:gongruya/anomaly.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>anomaly.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>70CF09A7CD3CA3A51B1FCFF3E7292F2DBFBBBBDF</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:gongruya/anomaly.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>70CF09A7CD3CA3A51B1FCFF3E7292F2DBFBBBBDF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>70CF09A7CD3CA3A51B1FCFF3E7292F2DBFBBBBDF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>anomaly</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -15,6 +15,6 @@
 
 class anomalyDetection {
 public:
-    static void train(std::string videoName, int frameNumber, std::string detPath);
+    static void train(std::string videoName,  int startFrame, int endFrame, std::string detPath);
     static void demo(std::string videoName, int frameNumber, std::string detPath);
 };

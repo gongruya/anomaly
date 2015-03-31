@@ -11,7 +11,7 @@
 #include "detector.h"
 
 
-void anomalyDetection::train(std::string videoName, int frameNumber, std::string detPath) {
+void anomalyDetection::train(std::string videoName, int startFrame, int endFrame, std::string detPath) {
     cv::VideoCapture capture(videoName);
     addLog("%s\n", "Initializing the sparse learning system...");
     trainParam tParam;
@@ -20,11 +20,12 @@ void anomalyDetection::train(std::string videoName, int frameNumber, std::string
     cuboid features;
     detector detector1;
     
+    capture.set(CV_CAP_PROP_POS_FRAMES, startFrame);
     cv::Size videoSize = fParam.videoSize;
     
     addLog("%s\n", "Starting feature extraction...");
     
-    for (int i = 1; i <= frameNumber; ++i) {
+    for (int i = startFrame; i < endFrame; ++i) {
         cv::Mat gray, I;
         if (!capture.read(I))
             break;
@@ -35,10 +36,10 @@ void anomalyDetection::train(std::string videoName, int frameNumber, std::string
         gray /= 255;
         
         frames.addDiff(gray);
-        if (i > fParam.depth) {
+        if (i-startFrame >= fParam.depth) {
             features.feaTrain(frames, fParam);
         }
-        if (!(i % 100))
+        if (!((i-startFrame+1) % 100))
             addLog("%d, ", i);
     }
     addLog("%s", "\n------\n");

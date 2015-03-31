@@ -21,8 +21,9 @@ int main(int argc, const char * argv[]) {
     if (0) {        //Training
         string videoName = "/Users/gongruya/Documents/MATLAB/data/huangshan-anomaly/1.mp4";
         string detPath = "/Users/gongruya/Documents/Computer Vision/anomaly/detector/";
+        int startFrame = 0;
         int endFrame = 10375;
-        anomalyDetection::train(videoName, endFrame, detPath);
+        anomalyDetection::train(videoName, startFrame, endFrame, detPath);
     } else {        //Demo
         //int startFrame = 17*60*25-250;
         //int startFrame = 140*25;          //2
